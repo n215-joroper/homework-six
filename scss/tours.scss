@@ -1,0 +1,27 @@
+.tours{
+    height: 200px;
+    max-width: 980px;
+    display: flex;
+    
+    align-items: center;
+    margin: 0 auto;
+    background-color: black;
+    margin-top: 49px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    background-image: url(../images/tours-header.jpg);
+    
+    .tours-holder{
+        
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 60px;
+        
+        .tours-text{
+            text-decoration: none;
+        }
+    }
+}

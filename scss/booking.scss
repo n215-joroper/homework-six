@@ -1,0 +1,402 @@
+.booking{
+    height: 700px;
+    max-width: 828px;
+    margin: 0 auto;
+    //margin-left: 217px;
+    padding-top: 70px;
+    font-family: 'Gill Sans';
+    //font-style: italic;
+
+    
+    //background-color: blue;
+    h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: italic;
+        text-transform: uppercase;
+    }
+    .f2{
+        display: flex;
+        justify-content: space-between;
+        .name{
+            input{
+                //color: black;
+                font-size: 20px;
+                //font-weight: bold;
+                border-style: solid;
+                border-color: #79ADDC;
+                min-width: 344px;
+                height: 58px;
+                padding-left: 10px;
+                font-family: 'Gill Sans';
+            }
+            ::placeholder{
+                color: black;
+                //padding-left: 5px;
+
+            }
+            
+           
+        }
+        .email{
+            input{
+                color: black;
+                font-size: 20px;
+                //font-weight: bold;
+                border-style: solid;
+                border-color: #79ADDC;
+                min-width: 453px;
+                height: 58px;
+                padding-left: 10px;
+                font-family: 'Gill Sans';
+                //margin-left: 10px;
+            }
+            ::placeholder{
+                color: black;
+                //padding-left: 5px;
+            }
+        }
+    }
+
+    .s2{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+        .country{
+            input{
+                color: black;
+                font-size: 20px;
+                //font-weight: bold;
+                border-style: solid;
+                border-color: #79ADDC;
+                width: 344px;
+                height: 58px;
+                padding-left: 10px;
+                font-family: 'Gill Sans';
+                
+            }
+            ::placeholder{
+                color: black;
+                //padding-left: 5px;
+            }
+        }
+        .hotel{
+            input{
+                color: black;
+                font-size: 20px;
+                //font-weight: bold;
+                border-style: solid;
+                border-color: #79ADDC;
+                width: 453px;
+                height: 58px;
+                padding-left: 10px;
+                font-family: 'Gill Sans';
+                //margin-left: 10px;
+            }
+            ::placeholder{
+                color: black;
+                //padding-left: 5px;
+            }
+        }
+    }
+
+    .check-in {
+        padding-top: 15px;
+        color: black;
+        font-size: 17px;
+        //font-weight: bold;
+        .checkin-holder{
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            input{
+                color: black;
+                font-size: 20px;
+                //font-weight: bold;
+                border-style: solid;
+                border-color: #79ADDC;
+                width: 698px;
+                height: 58px;
+                padding-left: 10px;
+                font-family: 'Gill Sans';
+            }
+            ::-webkit-calendar-picker-indicator{
+                //opacity: 0;
+                background-image: url(../images/calender.jpg);
+                padding-right: 10px;
+            }
+            
+        }
+        div{
+            font-size: 20px;
+        }
+    }
+    
+    .check-out {
+        padding-top: 15px;
+        color: black;
+        font-size: 17px;
+        //font-weight: bold;
+        .checkout-holder{
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            input{
+                //color: black;
+                font-size: 20px;
+                
+                //font-weight: bold;
+                border-style: solid;
+                border-color: #79ADDC;
+                width: 698px;
+                height: 58px;
+                padding-left: 10px;
+                font-family: 'Gill Sans';
+                
+            }
+            ::-webkit-calendar-picker-indicator{
+                //opacity: 0;
+                background-image: url(../images/calender.jpg);
+                padding-right: 10px;
+            }
+            
+        }
+        div{
+            font-size: 20px;
+        }
+        
+    }
+
+    .restrict{
+        padding-top: 15px;
+        align-items: center;
+        .restrict-holder{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            .adult{
+                
+                //color: black;
+                font-size: 20px;
+                //font-weight: bold;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                padding-right: 10px;
+                //font-family: 'Gill Sans';
+                p{
+                    font-size: 20px;
+                    padding-top: 15px;
+                    margin-right: 40px;
+                }
+                select{
+                    //color: black;
+                    font-size: 20px;
+                    //font-weight: bold;
+                    border-style: solid;
+                    border-color: #79ADDC;
+                    padding-right: 10px;
+                    min-width: 103px;
+                    height: 58px;
+                    padding-left: 10px;
+                    font-family: 'Gill Sans';
+                   
+                }
+                
+            }
+            .child{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: black;
+                font-size: 17px;
+                //font-weight: bold;
+                p{
+                    font-size: 20px;
+                    padding-top: 15px;
+                    margin-right: 20px;
+                }
+                select{
+                    //color: black;
+                    font-size: 20px;
+                    //font-weight: bold;
+                    border-style: solid;
+                    border-color: #79ADDC;
+                    min-width: 103px;
+                    height: 58px;
+                    padding-left: 10px;
+                    font-family: 'Gill Sans';
+                }
+            }
+            .room{
+                //position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: black;
+                font-size: 17px;
+                //font-weight: bold;
+                p{
+                    font-size: 20px;
+                    padding-top: 15px;
+                    margin-right: 50px;
+                }
+                select{
+                    //color: black;
+                    font-size: 20px;
+                    //font-weight: bold;
+                    border-style: solid;
+                    border-color: #79ADDC;
+                    min-width: 103px;
+                    height: 58px;
+                    padding-left: 10px;
+                    font-family: 'Gill Sans';
+                    //background: blue;
+                    //appearance: none;
+
+                    //background-image: url(../images/caret-down.png);
+                    //background-image: url(../images/caret-down-solid.svg);
+                    
+                }
+                /*.arrow{
+                    //position: fixed;
+                    
+                    display: block;
+                    background-color: red;
+                    height: 1rem;
+                    width: 1rem;;
+                }*/
+            }
+        }
+    }
+
+    .message-box{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        
+        input{
+            //color: black;
+            font-size: 20px;
+            //font-weight: bold;
+            border-style: solid;
+            min-width: 100%;
+            height: 192px;
+            border-color: #79ADDC;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 150px;
+            padding-left: 15px;
+            font-family: 'Gill Sans';
+        }
+        ::placeholder{
+            color: black;
+            
+            
+            //padding-bottom: 150px;
+            //padding-left: 15px;
+        }
+    }
+
+    .submit-button{
+        margin-top: 15px;
+        padding-top: 15px;
+        height: 40px;
+        min-width: 100%;
+        background-color: #79ADDC;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border-radius: 25px;
+
+        p{
+            font-family: 'Gill Sans';
+            text-transform: uppercase;
+        }
+        
+    }
+
+}
+
+@media all and (max-width: 850px){
+    .booking{
+        margin-top: 500px;
+        //margin: 0 auto;
+        flex-direction: column;
+        
+        h1{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        .f2{
+            
+            .name{
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                //margin: 0 auto;
+                input{
+                    
+                    min-width: 100%;
+                    margin-bottom: 15px;
+                    
+                }
+            }
+            .email{
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                input{
+                    
+                    min-width: 100%;
+                }
+            }
+            flex-direction: column;
+        }
+        
+        .s2{
+            flex-direction: column;
+            .country{
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                input{
+                    min-width: 100%;
+                    margin-bottom: 15px;
+                    
+                }
+            }
+            .hotel{
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                input{
+                    min-width: 100%;
+                }
+            }
+        }
+
+       
+        .restrict{
+           
+            .restrict-holder{
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                //margin: 0 auto;
+                .adult{
+                    margin-bottom: 10px;
+                }
+                .child{
+                    margin-bottom: 10px;
+                }
+                flex-direction: column;
+            }
+        }
+    }
+
+    
+}
+

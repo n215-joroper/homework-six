@@ -1,0 +1,145 @@
+.clients{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    max-width: 980px;
+    
+    //background-color: teal;
+    
+    
+    .client-holder{
+        min-width: 100%;
+        min-height: 100%;
+        //background-color: pink;
+        .client-header{
+            //background-color: blueviolet;
+            max-width: 30%;
+            height: 60px;
+            font-size: 18px;
+            background: rgba(0,0,0,0);
+            border-bottom: 1px solid black;
+            
+            h1{
+                font-weight: normal;
+            font-family: 'Gill Sans';
+            }
+        }
+        .girl{
+            margin-top: 37px;
+            max-width: 711px;
+            height: 150px;
+            //background-color: green;
+            display: flex;
+            .girlImage{
+                width: 260px;
+                height: 150px;
+                background-color: black;
+                background-repeat: no-repeat;
+                background-size: cover;
+                justify-content: center;
+                background-image: url(../images/about-client-01.jpg);
+            }
+            .girlText{
+                width: 385px;
+                height: 150px;
+                //background-color: purple;
+                margin-left: 20px;
+                font-size: 16px;
+                font-family: 'Gill Sans';
+                .girlName{
+                    padding-top: 40px;
+                    padding-left: 240px;
+                    font-size: 20px;
+                    h4 {
+                        font-family: 'Gill Sans';
+                        font-weight: normal;
+                        color: #79ADDC;
+                    }
+                }
+            }
+        }
+        .boy{
+            margin-top: 37px;
+            min-width: 100%;
+            height: 150px;
+            //background-color: yellow;
+            display: flex;
+            //align-items: center;
+           
+            .boyImage{
+                width: 260px;
+                height: 150px;
+                background-color: black;
+                background-image: url(../images/about-client-02.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                justify-content: center;
+            }
+            .boyText{
+                width: 385px;
+                height: 150px;
+                //background-color: green;
+                margin-left: 20px;
+                font-size: 16px;
+                font-family: 'Gill Sans';
+                .boyName{
+                    padding-top: 40px;
+                    padding-left: 240px;
+                    font-size: 20px;
+                    h4 {
+                        font-family: 'Gill Sans';
+                        font-weight: normal;
+                        color: #79ADDC;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1008px){
+    .clients{
+        
+        
+        
+        .client-holder{
+           
+            .client-header{
+               
+            }
+            .girl{
+               
+                .girlImage{
+                    
+                }
+                .girlText{
+                    
+                    .girlName{
+                        
+                        h4 {
+                            
+                        }
+                    }
+                }
+            }
+            .boy{
+                
+               
+                .boyImage{
+                    
+                }
+                .boyText{
+                    
+                    .boyName{
+                        
+                        h4 {
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

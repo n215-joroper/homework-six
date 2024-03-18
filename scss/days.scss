@@ -1,0 +1,162 @@
+.days{
+    max-width: 980px;
+    height: 900px;
+    //background-color: pink;
+    margin: 0 auto;
+    //justify-content: center;
+    //align-items: center;
+    //display: flex;
+    
+    .day1-holder{
+    padding-top: 32px;
+   
+       
+        .day1-header{
+            //background-color: pink;
+            
+            
+            h1{
+                font-size: 60px;
+                font-family: 'Gill Sans';
+                font-weight: 350;
+                font-style: thin;
+                position: relative;
+                display: inline;
+                
+                //border-bottom: 1px solid black;
+                //padding-bottom: 5px;
+                
+                   
+            }
+            h1::after {
+                display: block;
+                content: '';
+                 width: 145px;
+                 height: 2px;
+                 background: black;
+                 position: absolute;
+                 bottom: 0;
+                 left: 0;
+                 
+               }
+            
+           
+        }
+        
+        .day1-text{
+            padding-top: 37px;
+            font-size: 16px;
+            font-family: 'Gill Sans';
+            //padding-bottom: 68px;
+        }
+    }
+    .day2-holder{
+        padding-top: 70px;
+        
+         .day2-header{
+             //background-color: pink;
+             
+             
+             h1{
+                 font-size: 60px;
+                 font-family: 'Gill Sans';
+                 font-weight: 350;
+                 font-style: thin;
+                 position: relative;
+                 display: inline;
+                 
+                 //border-bottom: 1px solid black;
+                 //padding-bottom: 5px;
+                 
+                    
+             }
+             h1::after {
+                 display: block;
+                 content: '';
+                  width: 145px;
+                  height: 2px;
+                  background: black;
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  
+                }
+             
+            
+         }
+         
+         .day2-text{
+             padding-top: 37px;
+             font-size: 16px;
+             font-family: 'Gill Sans';
+             //padding-bottom: 68px;
+         }
+     }
+     .day3-holder{
+        padding-top: 70px;
+        
+        
+         .day3-header{
+             //background-color: pink;
+             
+             
+             h1{
+                 font-size: 60px;
+                 font-family: 'Gill Sans';
+                 font-weight: 350;
+                 font-style: thin;
+                 position: relative;
+                 display: inline;
+                 
+                 //border-bottom: 1px solid black;
+                 //padding-bottom: 5px;
+                 
+                    
+             }
+             h1::after {
+                 display: block;
+                 content: '';
+                  width: 145px;
+                  height: 2px;
+                  background: black;
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  
+                }
+             
+            
+         }
+         
+         .day3-text{
+             padding-top: 37px;
+             font-size: 16px;
+             font-family: 'Gill Sans';
+             padding-bottom: 75px;
+         }
+     }
+    .book-now{
+        margin: 0 auto;
+        align-items: center;
+        height: 40px;
+        width: 133px;
+        background-color: #79ADDC;
+        border-radius: 25px;
+        align-items: center;
+        text-align: center;
+        
+        
+            a{
+                text-decoration: none;
+            }
+                
+            p{
+                color: white;
+                
+                padding-top: 9px;
+                font-size: 17px;
+                //font: bolder;
+                font-family: 'Gill Sans';
+            }
+    }
+}

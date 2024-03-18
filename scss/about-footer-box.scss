@@ -1,0 +1,79 @@
+.about-footer-box{
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    max-width: 1280px;
+    font-family: 'Gill Sans';
+    .footer-holder{
+        height: 100px;
+        width: 100%;
+        background-color: #79ADDC;
+        justify-content: space-around;
+        align-items: center;
+        display: flex;
+        color: white;
+        margin-top: 120px;
+        .logo{
+            display: flex;
+    
+            //color: white;
+            //font-size: 35px;
+            .logotravel{
+                width: 95px;
+                height: 42px;
+                background-image: url(../images/logo-white.png);
+
+            }
+            div{
+                padding-top: 18px;
+                //font-family: 'Gill Sans';
+                //font-size: 25px;
+            }
+        }
+    
+        .media{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            //margin-right: 5px;
+            .fb{     
+                font-size: 25px;
+                color: white;
+                margin-right: 10px;
+                
+            }
+            .insta{
+                font-size: 25px;
+                color: white;
+                
+            }
+            .twitter{
+                font-size: 25px;
+                color: white;
+                margin-left: 10px;
+            }
+        }
+    }
+
+
+}
+
+@media all and (max-width: 850px){
+    .footer-box{
+        
+        margin-top: 300px;
+        .footer-holder{
+            height: 100px;
+            flex-direction: column;
+            .logotravel{
+                
+            }
+            .copywrite{
+               
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,509 @@
+.places {
+    height: 1137px;
+    width: 980px;
+    //background-color: red;
+    justify-content: center;
+    align-items: center;
+    //display: flex;
+    margin: 0 auto;
+    .r1{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: 0 auto;
+        .trip1{
+            height: 304px;
+            min-width: 236px;
+            background-color: purple;
+            margin: 60px;
+            background-image: url(../images/Group\ 50.png);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            justify-content: center;
+            h1{
+                margin-top: 60px;
+                margin-bottom: 0px;
+                color: white;
+                font-size: 40px;
+                font-family: 'Gill Sans';
+                font-style: italic;
+                font-weight: normal;
+            }
+            h2{
+                color: white;
+                margin-bottom: 70px;
+                text-decoration: none;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-transform: uppercase;
+                font-weight: normal;
+                font-style: italic;
+            }
+            
+            .learn{
+                height: 40px;
+                width: 133px;
+                margin-left: 52px;
+                background-color: #79ADDC;
+                border-radius: 25px;
+                align-items: center;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                }
+                p{
+                    color: white;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    padding-top: 9px;
+                    font-size: 17px;
+                    //font: bolder;
+                    font-family: 'Gill Sans';
+                }
+            }
+        }
+        .trip2{
+            height: 304px;
+            min-width: 236px;
+            background-color: purple;
+            background-image: url(../images/Group\ 36.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            h1{
+                margin-top: 60px;
+                margin-bottom: 0px;
+                color: white;
+                font-size: 40px;
+                font-family: 'Gill Sans';
+                font-style: italic;
+                font-weight: normal;
+            }
+            h2{
+                color: white;
+                margin-bottom: 70px;
+                //font-size: 40px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-transform: uppercase;
+                font-weight: normal;
+                font-style: italic;
+            }
+            
+            .learn{
+                height: 40px;
+                width: 133px;
+                margin-left: 52px;
+                background-color: #79ADDC;
+                border-radius: 25px;
+                align-items: center;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                }
+                p{
+                    color: white;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    padding-top: 9px;
+                    font-size: 17px;
+                    //font: bolder;
+                    font-family: 'Gill Sans';
+                }
+            }
+        }
+        .trip3{
+            height: 304px;
+            width: 236px;
+            background-color: purple;
+            margin: 60px;
+            background-image: url(../images/Group\ 37.png);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            justify-content: center;
+            h1{
+                margin-top: 60px;
+                margin-bottom: 0px;
+                color: white;
+                font-size: 40px;
+                font-family: 'Gill Sans';
+                font-style: italic;
+                font-weight: normal;
+            }
+            h2{
+                color: white;
+                margin-bottom: 70px;
+                font-weight: normal;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-transform: uppercase;
+                font-weight: normal;
+                font-style: italic;
+            }
+            
+            .learn{
+                height: 40px;
+                width: 133px;
+                margin-left: 52px;
+                background-color: #79ADDC;
+                border-radius: 25px;
+                align-items: center;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                }
+                
+                p{
+                    color: white;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    padding-top: 9px;
+                    font-size: 17px;
+                    //font: bolder;
+                    font-family: 'Gill Sans';
+                }
+            }
+        }
+    
+    }
+    .r2{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: 0 auto;
+        //background-color: black;
+        height: 304px;
+        min-width: 100%;
+        
+        .trip1{
+            height: 304px;
+            min-width: 236px;
+            background-color: purple;
+            margin: 60px;
+            background-image: url(../images/tour-04.jpg);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            justify-content: center;
+            h1{
+                margin-top: 60px;
+                margin-bottom: 0px;
+                color: white;
+                font-size: 40px;
+                font-family: 'Gill Sans';
+                font-style: italic;
+                font-weight: normal;
+            }
+            h2{
+                color: white;
+                margin-bottom: 70px;
+                text-decoration: none;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-transform: uppercase;
+                font-weight: normal;
+                font-style: italic;
+            }
+            
+            .learn{
+                height: 40px;
+                width: 133px;
+                margin-left: 52px;
+                background-color: #79ADDC;
+                border-radius: 25px;
+                align-items: center;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                }
+                p{
+                    color: white;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    padding-top: 9px;
+                    font-size: 17px;
+                    //font: bolder;
+                    font-family: 'Gill Sans';
+                }
+            }
+        }
+        .trip2{
+            height: 304px;
+            min-width: 236px;
+            background-color: purple;
+            background-image: url(../images/tour-05.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            h1{
+                margin-top: 60px;
+                margin-bottom: 0px;
+                color: white;
+                font-size: 40px;
+                font-family: 'Gill Sans';
+                font-style: italic;
+                font-weight: normal;
+            }
+            h2{
+                color: white;
+                margin-bottom: 70px;
+                //font-size: 40px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-transform: uppercase;
+                font-weight: normal;
+                font-style: italic;
+            }
+            
+            .learn{
+                height: 40px;
+                width: 133px;
+                margin-left: 52px;
+                background-color: #79ADDC;
+                border-radius: 25px;
+                align-items: center;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                }
+                p{
+                    color: white;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    padding-top: 9px;
+                    font-size: 17px;
+                    //font: bolder;
+                    font-family: 'Gill Sans';
+                }
+            }
+        }
+        .trip3{
+            height: 304px;
+            width: 236px;
+            background-color: purple;
+            margin: 60px;
+            background-image: url(../images/tour-06.jpg);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            justify-content: center;
+            h1{
+                margin-top: 60px;
+                margin-bottom: 0px;
+                color: white;
+                font-size: 40px;
+                font-family: 'Gill Sans';
+                font-style: italic;
+                font-weight: normal;
+            }
+            h2{
+                color: white;
+                margin-bottom: 70px;
+                font-weight: normal;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-transform: uppercase;
+                font-weight: normal;
+                font-style: italic;
+            }
+            
+            .learn{
+                height: 40px;
+                width: 133px;
+                margin-left: 52px;
+                background-color: #79ADDC;
+                border-radius: 25px;
+                align-items: center;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                }
+                
+                p{
+                    color: white;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    padding-top: 9px;
+                    font-size: 17px;
+                    //font: bolder;
+                    font-family: 'Gill Sans';
+                }
+            }
+        }
+    
+    }
+    .r3{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: 0 auto;
+        .trip1{
+            height: 304px;
+            min-width: 236px;
+            background-color: purple;
+            margin: 60px;
+            background-image: url(../images/tour-07.jpg);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            justify-content: center;
+            h1{
+                margin-top: 60px;
+                margin-bottom: 0px;
+                color: white;
+                font-size: 40px;
+                font-family: 'Gill Sans';
+                font-style: italic;
+                font-weight: normal;
+            }
+            h2{
+                color: white;
+                margin-bottom: 70px;
+                text-decoration: none;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-transform: uppercase;
+                font-weight: normal;
+                font-style: italic;
+            }
+            
+            .learn{
+                height: 40px;
+                width: 133px;
+                margin-left: 52px;
+                background-color: #79ADDC;
+                border-radius: 25px;
+                align-items: center;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                }
+                p{
+                    color: white;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    padding-top: 9px;
+                    font-size: 17px;
+                    //font: bolder;
+                    font-family: 'Gill Sans';
+                }
+            }
+        }
+        .trip2{
+            height: 304px;
+            min-width: 236px;
+            background-color: purple;
+            background-image: url(../images/tour-08.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            h1{
+                margin-top: 60px;
+                margin-bottom: 0px;
+                color: white;
+                font-size: 40px;
+                font-family: 'Gill Sans';
+                font-style: italic;
+                font-weight: normal;
+            }
+            h2{
+                color: white;
+                margin-bottom: 70px;
+                //font-size: 40px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-transform: uppercase;
+                font-weight: normal;
+                font-style: italic;
+            }
+            
+            .learn{
+                height: 40px;
+                width: 133px;
+                margin-left: 52px;
+                background-color: #79ADDC;
+                border-radius: 25px;
+                align-items: center;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                }
+                p{
+                    color: white;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    padding-top: 9px;
+                    font-size: 17px;
+                    //font: bolder;
+                    font-family: 'Gill Sans';
+                }
+            }
+        }
+        .trip3{
+            height: 304px;
+            width: 236px;
+            background-color: purple;
+            margin: 60px;
+            background-image: url(../images/tour-09.jpg);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            justify-content: center;
+            h1{
+                margin-top: 60px;
+                margin-bottom: 0px;
+                color: white;
+                font-size: 40px;
+                font-family: 'Gill Sans';
+                font-style: italic;
+                font-weight: normal;
+            }
+            h2{
+                color: white;
+                margin-bottom: 70px;
+                font-weight: normal;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-transform: uppercase;
+                font-weight: normal;
+                font-style: italic;
+            }
+            
+            .learn{
+                height: 40px;
+                width: 133px;
+                margin-left: 52px;
+                background-color: #79ADDC;
+                border-radius: 25px;
+                align-items: center;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                }
+                
+                p{
+                    color: white;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    padding-top: 9px;
+                    font-size: 17px;
+                    //font: bolder;
+                    font-family: 'Gill Sans';
+                }
+            }
+        }
+    
+    }
+}
+

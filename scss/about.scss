@@ -1,0 +1,46 @@
+.about{
+    margin: 0 auto;
+    height: 400px;
+    max-width: 980px;
+    //background-color: black;
+    //position: absolute;
+    
+    align-items: center;
+    display: flex;
+    //margin-top: 110px;
+   
+    
+    
+
+    .about-holder{
+        width: 100%;
+        
+        //background-color: palegreen;
+       
+        
+        .about-text{
+            h1{
+                font-family: 'Gill Sans';
+                font-weight: normal;
+                
+                //font-weight: normal;
+            }
+            
+            width: 17%;
+            background: rgba(0,0,0,0);
+            border-bottom: 1px solid black;
+            font-size:35px;
+            //background-color: palevioletred;
+            
+        }
+
+        .info{
+            height: 100px;
+            width: 100%;
+            padding-top: 36.5px;
+            font-size: 16px;
+            font-family: 'Gill Sans'
+            //background-color: pink;
+        }
+    }
+}

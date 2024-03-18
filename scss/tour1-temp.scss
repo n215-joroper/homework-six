@@ -1,0 +1,42 @@
+.tour-package {
+    max-width: 980px;
+    height: 413px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    //display: flex;
+    margin: 0 auto;
+    background-image: url(../images/tour-01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 49px;
+    position: relative;
+   
+    
+    .package-holder{
+       
+      
+        
+        .package-text{
+            position: absolute;
+            top: 8px;
+            left: 16px;
+            font-size: 18px;
+            p{
+
+            }
+        }
+        .starting-text{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-size: 18px;
+            p{
+
+            }
+        }
+    
+    }
+    
+}

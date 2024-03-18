@@ -1,0 +1,39 @@
+.temp-photos{
+    height: 347px;
+    max-width: 980px;
+    //background-color: black;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    .photo-holder{
+        display: flex;
+        justify-content: space-between;
+        .temp-pic1{
+            height: 347px;
+            width: 298px;
+            background-color: red;
+            background-image: url(../images/israel-tour-01.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .temp-pic2{
+            height: 347px;
+            width: 298px;
+            background-color: red;
+            background-image: url(../images/israel-tour-02.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .temp-pic3{
+            height: 347px;
+            width: 298px;
+            background-color: red;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(../images/israel-tour-03.jpg);
+        }
+    }
+}
