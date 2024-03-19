@@ -57,8 +57,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 @media all and (max-width: 850px) {
-  .nav .nav-holder {
-    visibility: none;
+  .nav-holder nav {
+    flex-direction: column;
+    padding-bottom: 125px;
   }
 }
 .hero {
@@ -112,6 +113,9 @@ h1, h2, h3, h4, h5, h6, p {
 .hero h2 {
   color: white;
   font-size: 20px;
+}
+.hero a {
+  text-decoration: none;
 }
 
 .trip {
@@ -209,6 +213,9 @@ h1, h2, h3, h4, h5, h6, p {
   align-items: center;
   text-align: center;
 }
+.trip .trip2 .learn a {
+  text-decoration: none;
+}
 .trip .trip2 .learn p {
   color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -256,6 +263,9 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 25px;
   align-items: center;
   text-align: center;
+}
+.trip .trip3 .learn a {
+  text-decoration: none;
 }
 .trip .trip3 .learn p {
   color: white;
@@ -523,6 +533,7 @@ h1, h2, h3, h4, h5, h6, p {
   .booking {
     margin-top: 500px;
     flex-direction: column;
+    margin-bottom: 300px;
   }
   .booking h1 {
     justify-content: center;
@@ -599,7 +610,7 @@ h1, h2, h3, h4, h5, h6, p {
   align-items: center;
   display: flex;
   color: white;
-  margin-top: 120px;
+  margin-top: 200px;
 }
 .footer-box .footer-holder .logo {
   display: flex;
@@ -632,12 +643,9 @@ h1, h2, h3, h4, h5, h6, p {
   margin-left: 10px;
 }
 
-@media all and (max-width: 850px) {
-  .footer-box {
-    margin-top: 300px;
-  }
+@media all and (max-width: 750px) {
   .footer-box .footer-holder {
-    height: 100px;
+    height: 150px;
     flex-direction: column;
   }
 }
@@ -687,8 +695,9 @@ nav .black-nav-holder a {
 }
 
 @media all and (max-width: 850px) {
-  .nav .nav-holder {
-    visibility: none;
+  nav .black-nav-holder {
+    flex-direction: column;
+    padding-bottom: 125px;
   }
 }
 .about {
@@ -702,14 +711,22 @@ nav .black-nav-holder a {
   width: 100%;
 }
 .about .about-holder .about-text {
-  width: 17%;
-  background: rgba(0, 0, 0, 0);
-  border-bottom: 1px solid black;
   font-size: 35px;
 }
 .about .about-holder .about-text h1 {
   font-family: "Gill Sans";
   font-weight: normal;
+  position: relative;
+}
+.about .about-holder .about-text h1::after {
+  display: block;
+  content: "";
+  width: 171px;
+  height: 2px;
+  background: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .about .about-holder .info {
   height: 100px;
@@ -719,6 +736,11 @@ nav .black-nav-holder a {
   font-family: "Gill Sans";
 }
 
+@media all and (max-width: 750px) {
+  .about {
+    padding-bottom: 50px;
+  }
+}
 .clients {
   margin: 0 auto;
   display: flex;
@@ -731,16 +753,21 @@ nav .black-nav-holder a {
   min-width: 100%;
   min-height: 100%;
 }
-.clients .client-holder .client-header {
-  max-width: 30%;
-  height: 60px;
-  font-size: 18px;
-  background: rgba(0, 0, 0, 0);
-  border-bottom: 1px solid black;
-}
 .clients .client-holder .client-header h1 {
   font-weight: normal;
   font-family: "Gill Sans";
+  position: relative;
+  font-size: 40px;
+}
+.clients .client-holder .client-header h1::after {
+  display: block;
+  content: "";
+  width: 255px;
+  height: 2px;
+  background: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .clients .client-holder .girl {
   margin-top: 37px;
@@ -807,63 +834,37 @@ nav .black-nav-holder a {
   color: #79ADDC;
 }
 
-.about-footer-box {
-  margin: 0 auto;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  height: 100px;
-  max-width: 1280px;
-  font-family: "Gill Sans";
-}
-.about-footer-box .footer-holder {
-  height: 100px;
-  width: 100%;
-  background-color: #79ADDC;
-  justify-content: space-around;
-  align-items: center;
-  display: flex;
-  color: white;
-  margin-top: 120px;
-}
-.about-footer-box .footer-holder .logo {
-  display: flex;
-}
-.about-footer-box .footer-holder .logo .logotravel {
-  width: 95px;
-  height: 42px;
-  background-image: url(../images/logo-white.png);
-}
-.about-footer-box .footer-holder .logo div {
-  padding-top: 18px;
-}
-.about-footer-box .footer-holder .media {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.about-footer-box .footer-holder .media .fb {
-  font-size: 25px;
-  color: white;
-  margin-right: 10px;
-}
-.about-footer-box .footer-holder .media .insta {
-  font-size: 25px;
-  color: white;
-}
-.about-footer-box .footer-holder .media .twitter {
-  font-size: 25px;
-  color: white;
-  margin-left: 10px;
-}
-
-@media all and (max-width: 850px) {
-  .footer-box {
-    margin-top: 300px;
+@media all and (max-width: 726px) {
+  .clients {
+    margin-top: 50px;
+    margin-bottom: 300px;
   }
-  .footer-box .footer-holder {
-    height: 100px;
+  .clients .client-holder .client-header {
+    margin-top: 70px;
+  }
+  .clients .client-holder .girl {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
     flex-direction: column;
+    display: block;
+    margin-bottom: 150px;
+  }
+  .clients .client-holder .girl .girlText {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .clients .client-holder .boy {
+    display: flex;
+    flex-direction: column-reverse;
+    display: block;
+    padding-top: 30px;
+  }
+  .clients .client-holder .boy .boyText {
+    margin-top: 20px;
   }
 }
 .tours {
@@ -878,13 +879,15 @@ nav .black-nav-holder a {
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
-  background-image: url(../images/tours-header.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tours-header.jpg);
 }
 .tours .tours-holder {
   justify-content: center;
   align-items: center;
   color: white;
   font-size: 60px;
+  font-family: "Gill Sans";
+  font-weight: light;
 }
 .tours .tours-holder .tours-text {
   text-decoration: none;
@@ -892,7 +895,7 @@ nav .black-nav-holder a {
 
 .places {
   height: 1137px;
-  width: 980px;
+  max-width: 980px;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -901,7 +904,7 @@ nav .black-nav-holder a {
   justify-content: center;
   align-items: center;
   display: flex;
-  margin: 0 auto;
+  display: flex;
 }
 .places .r1 .trip1 {
   height: 304px;
@@ -1057,29 +1060,27 @@ nav .black-nav-holder a {
   justify-content: center;
   align-items: center;
   display: flex;
-  margin: 0 auto;
   height: 304px;
-  min-width: 100%;
+  width: 100%;
 }
 .places .r2 .trip1 {
   height: 304px;
   min-width: 236px;
   background-color: purple;
   margin: 60px;
-  background-image: url(../images/tour-04.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-04.jpg);
   justify-content: center;
   align-items: center;
   text-align: center;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  justify-content: center;
 }
 .places .r2 .trip1 h1 {
   margin-top: 60px;
   margin-bottom: 0px;
   color: white;
-  font-size: 40px;
+  font-size: 35px;
   font-family: "Gill Sans";
   font-style: italic;
   font-weight: normal;
@@ -1116,7 +1117,7 @@ nav .black-nav-holder a {
   height: 304px;
   min-width: 236px;
   background-color: purple;
-  background-image: url(../images/tour-05.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-05.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1165,7 +1166,7 @@ nav .black-nav-holder a {
   width: 236px;
   background-color: purple;
   margin: 60px;
-  background-image: url(../images/tour-06.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-06.jpg);
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -1222,7 +1223,7 @@ nav .black-nav-holder a {
   min-width: 236px;
   background-color: purple;
   margin: 60px;
-  background-image: url(../images/tour-07.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-07.jpg);
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -1272,7 +1273,7 @@ nav .black-nav-holder a {
   height: 304px;
   min-width: 236px;
   background-color: purple;
-  background-image: url(../images/tour-08.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-08.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1321,7 +1322,7 @@ nav .black-nav-holder a {
   width: 236px;
   background-color: purple;
   margin: 60px;
-  background-image: url(../images/tour-09.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-09.jpg);
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -1368,6 +1369,61 @@ nav .black-nav-holder a {
   font-family: "Gill Sans";
 }
 
+@media all and (max-width: 850px) {
+  .places {
+    padding-bottom: 3300px;
+    justify-content: space-between;
+  }
+  .places .r1 {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .places .r1 .trip1 {
+    height: 304px;
+    min-width: 236px;
+  }
+  .places .r1 .trip2 {
+    height: 304px;
+    min-width: 236px;
+  }
+  .places .r1 .trip3 {
+    height: 304px;
+    min-width: 236px;
+  }
+  .places .r2 {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .places .r2 .trip1 {
+    height: 304px;
+    min-width: 236px;
+  }
+  .places .r2 .trip2 {
+    height: 304px;
+    min-width: 236px;
+  }
+  .places .r2 .trip3 {
+    height: 304px;
+    min-width: 236px;
+  }
+  .places .r3 {
+    flex-direction: column;
+    padding-top: 700px;
+    justify-content: space-between;
+  }
+  .places .r3 .trip1 {
+    height: 304px;
+    min-width: 236px;
+  }
+  .places .r3 .trip2 {
+    height: 304px;
+    min-width: 236px;
+  }
+  .places .r3 .trip3 {
+    height: 304px;
+    min-width: 236px;
+  }
+}
 .tour-package {
   max-width: 980px;
   height: 413px;
@@ -1375,7 +1431,7 @@ nav .black-nav-holder a {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  background-image: url(../images/tour-01.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-01.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1388,12 +1444,24 @@ nav .black-nav-holder a {
   left: 16px;
   font-size: 18px;
 }
+.tour-package .package-holder .package-text p {
+  color: white;
+  font-size: 80px;
+  font-family: "Gill Sans";
+}
 .tour-package .package-holder .starting-text {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  right: 0px;
+  bottom: 0px;
   font-size: 18px;
 }
+.tour-package .package-holder .starting-text p {
+  color: white;
+  font-size: 30px;
+  font-family: "Gill Sans";
+  font-weight: 10px;
+}
+
 .temp-photos {
   height: 347px;
   max-width: 980px;
@@ -1432,7 +1500,306 @@ nav .black-nav-holder a {
   background-repeat: no-repeat;
   background-image: url(../images/israel-tour-03.jpg);
 }
+.temp-photos .photo-holder .usa-pic1 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/usa-tour-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.temp-photos .photo-holder .usa-pic2 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/usa-tour-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.temp-photos .photo-holder .usa-pic3 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/usa-tour-03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.temp-photos .photo-holder .aus-pic1 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/aus-tour-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.temp-photos .photo-holder .aus-pic2 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/nz-tour-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.temp-photos .photo-holder .aus-pic3 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/nz-tour-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.temp-photos .photo-holder .nz-pic1 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/nz-tour-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.temp-photos .photo-holder .nz-pic2 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/aus-tour-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.temp-photos .photo-holder .nz-pic3 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/aus-tour-03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.temp-photos .photo-holder .france-pic1 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/france-tour-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.temp-photos .photo-holder .france-pic2 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/france-tour-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.temp-photos .photo-holder .france-pic3 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/france-tour-03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.temp-photos .photo-holder .egypt-pic1 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/egypt-tour-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.temp-photos .photo-holder .egypt-pic2 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/egypt-tour-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.temp-photos .photo-holder .egypt-pic3 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/egypt-tour-03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.temp-photos .photo-holder .japan-pic1 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/japan-tour-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.temp-photos .photo-holder .japan-pic2 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/japan-tour-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.temp-photos .photo-holder .japan-pic3 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/japan-tour-03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.temp-photos .photo-holder .canada-pic1 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/canada-tour-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.temp-photos .photo-holder .canada-pic2 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/canada-tour-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.temp-photos .photo-holder .canada-pic3 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/canada-tour-03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.temp-photos .photo-holder .uae-pic1 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/uae-tour-01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.temp-photos .photo-holder .uae-pic2 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/uae-tour-02.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.temp-photos .photo-holder .uae-pic3 {
+  height: 347px;
+  width: 298px;
+  background-color: red;
+  background-image: url(../images/uae-tour-03.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
+@media all and (max-width: 960px) {
+  .temp-photos {
+    padding-bottom: 1165px;
+  }
+  .temp-photos .photo-holder {
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+  }
+  .temp-photos .photo-holder .usa-pic1 {
+    padding-bottom: 50px;
+  }
+  .temp-photos .photo-holder .usa-pic2 {
+    padding-bottom: 50px;
+  }
+  .temp-photos .photo-holder .usa-pic3 {
+    padding-bottom: 50px;
+  }
+  .temp-photos .photo-holder .aus-pic1 {
+    padding-bottom: 50px;
+  }
+  .temp-photos .photo-holder .aus-pic2 {
+    padding-bottom: 50px;
+  }
+  .temp-photos .photo-holder .aus-pic3 {
+    padding-bottom: 50px;
+  }
+  .temp-photos .photo-holder .nz-pic1 {
+    padding-bottom: 50px;
+  }
+  .temp-photos .photo-holder .nz-pic2 {
+    padding-bottom: 50px;
+  }
+  .temp-photos .photo-holder .nz-pic3 {
+    padding-bottom: 50px;
+  }
+  .temp-photos .photo-holder .france-pic1 {
+    padding-bottom: 50px;
+  }
+  .temp-photos .photo-holder .france-pic2 {
+    padding-bottom: 50px;
+  }
+  .temp-photos .photo-holder .france-pic3 {
+    padding-bottom: 50px;
+  }
+  .temp-photos .photo-holder .egypt-pic1 {
+    padding-bottom: 50px;
+  }
+  .temp-photos .photo-holder .egypt-pic2 {
+    padding-bottom: 50px;
+  }
+  .temp-photos .photo-holder .egypt-pic3 {
+    padding-bottom: 50px;
+  }
+  .temp-photos .photo-holder .japan-pic1 {
+    padding-bottom: 50px;
+  }
+  .temp-photos .photo-holder .japan-pic2 {
+    padding-bottom: 50px;
+  }
+  .temp-photos .photo-holder .japan-pic3 {
+    padding-bottom: 50px;
+  }
+  .temp-photos .photo-holder .canada-pic1 {
+    padding-bottom: 50px;
+  }
+  .temp-photos .photo-holder .canada-pic2 {
+    padding-bottom: 50px;
+  }
+  .temp-photos .photo-holder .canada-pic3 {
+    padding-bottom: 50px;
+  }
+  .temp-photos .photo-holder .uae-pic1 {
+    padding-bottom: 50px;
+  }
+  .temp-photos .photo-holder .uae-pic2 {
+    padding-bottom: 50px;
+  }
+  .temp-photos .photo-holder .uae-pic3 {
+    padding-bottom: 50px;
+  }
+}
 .days {
   max-width: 980px;
   height: 900px;
@@ -1535,6 +1902,315 @@ nav .black-nav-holder a {
   padding-top: 9px;
   font-size: 17px;
   font-family: "Gill Sans";
+}
+
+@media all and (max-width: 980px) {
+  .days {
+    margin-bottom: 50px;
+  }
+}
+.tour2-package {
+  max-width: 980px;
+  height: 413px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 49px;
+  position: relative;
+}
+.tour2-package .package-holder .package-text {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+.tour2-package .package-holder .package-text p {
+  color: white;
+  font-size: 80px;
+  font-family: "Gill Sans";
+}
+.tour2-package .package-holder .starting-text {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-size: 18px;
+}
+.tour2-package .package-holder .starting-text p {
+  color: white;
+  font-size: 30px;
+  font-family: "Gill Sans";
+  font-weight: 10px;
+}
+
+.tour3-package {
+  max-width: 980px;
+  height: 413px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 49px;
+  position: relative;
+}
+.tour3-package .package-holder .package-text {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+.tour3-package .package-holder .package-text p {
+  color: white;
+  font-size: 80px;
+  font-family: "Gill Sans";
+}
+.tour3-package .package-holder .starting-text {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-size: 18px;
+}
+.tour3-package .package-holder .starting-text p {
+  color: white;
+  font-size: 30px;
+  font-family: "Gill Sans";
+  font-weight: 10px;
+}
+
+.tour4-package {
+  max-width: 980px;
+  height: 413px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-04.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 49px;
+  position: relative;
+}
+.tour4-package .package-holder .package-text {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+.tour4-package .package-holder .package-text p {
+  color: white;
+  font-size: 80px;
+  font-family: "Gill Sans";
+}
+.tour4-package .package-holder .starting-text {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-size: 18px;
+}
+.tour4-package .package-holder .starting-text p {
+  color: white;
+  font-size: 30px;
+  font-family: "Gill Sans";
+  font-weight: 10px;
+}
+
+.tour5-package {
+  max-width: 980px;
+  height: 413px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-05.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 49px;
+  position: relative;
+}
+.tour5-package .package-holder .package-text {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+.tour5-package .package-holder .package-text p {
+  color: white;
+  font-size: 80px;
+  font-family: "Gill Sans";
+}
+.tour5-package .package-holder .starting-text {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-size: 18px;
+}
+.tour5-package .package-holder .starting-text p {
+  color: white;
+  font-size: 30px;
+  font-family: "Gill Sans";
+  font-weight: 10px;
+}
+
+.tour6-package {
+  max-width: 980px;
+  height: 413px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-06.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 49px;
+  position: relative;
+}
+.tour6-package .package-holder .package-text {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+.tour6-package .package-holder .package-text p {
+  color: white;
+  font-size: 80px;
+  font-family: "Gill Sans";
+}
+.tour6-package .package-holder .starting-text {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-size: 18px;
+}
+.tour6-package .package-holder .starting-text p {
+  color: white;
+  font-size: 30px;
+  font-family: "Gill Sans";
+  font-weight: 10px;
+}
+
+.tour7-package {
+  max-width: 980px;
+  height: 413px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-07.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 49px;
+  position: relative;
+}
+.tour7-package .package-holder .package-text {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+.tour7-package .package-holder .package-text p {
+  color: white;
+  font-size: 80px;
+  font-family: "Gill Sans";
+}
+.tour7-package .package-holder .starting-text {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-size: 18px;
+}
+.tour7-package .package-holder .starting-text p {
+  color: white;
+  font-size: 30px;
+  font-family: "Gill Sans";
+  font-weight: 10px;
+}
+
+.tour8-package {
+  max-width: 980px;
+  height: 413px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-08.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 49px;
+  position: relative;
+}
+.tour8-package .package-holder .package-text {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+.tour8-package .package-holder .package-text p {
+  color: white;
+  font-size: 80px;
+  font-family: "Gill Sans";
+}
+.tour8-package .package-holder .starting-text {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-size: 18px;
+}
+.tour8-package .package-holder .starting-text p {
+  color: white;
+  font-size: 30px;
+  font-family: "Gill Sans";
+  font-weight: 10px;
+}
+
+.tour9-package {
+  max-width: 980px;
+  height: 413px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tour-09.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 49px;
+  position: relative;
+}
+.tour9-package .package-holder .package-text {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+.tour9-package .package-holder .package-text p {
+  color: white;
+  font-size: 80px;
+  font-family: "Gill Sans";
+}
+.tour9-package .package-holder .starting-text {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-size: 18px;
+}
+.tour9-package .package-holder .starting-text p {
+  color: white;
+  font-size: 30px;
+  font-family: "Gill Sans";
+  font-weight: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

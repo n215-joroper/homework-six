@@ -1,16 +1,18 @@
 .places {
     height: 1137px;
-    width: 980px;
+    max-width: 980px;
     //background-color: red;
     justify-content: center;
     align-items: center;
     //display: flex;
     margin: 0 auto;
+    //background-color: red;
     .r1{
         justify-content: center;
         align-items: center;
         display: flex;
-        margin: 0 auto;
+        //margin: 0 auto;
+        display: flex;
         .trip1{
             height: 304px;
             min-width: 236px;
@@ -175,29 +177,30 @@
         justify-content: center;
         align-items: center;
         display: flex;
-        margin: 0 auto;
+        //margin: 0 auto;
         //background-color: black;
         height: 304px;
-        min-width: 100%;
+        width: 100%;
+        
         
         .trip1{
             height: 304px;
             min-width: 236px;
             background-color: purple;
             margin: 60px;
-            background-image: url(../images/tour-04.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour-04.jpg);
             justify-content: center;
             align-items: center;
             text-align: center;
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            justify-content: center;
+            
             h1{
                 margin-top: 60px;
                 margin-bottom: 0px;
                 color: white;
-                font-size: 40px;
+                font-size: 35px;
                 font-family: 'Gill Sans';
                 font-style: italic;
                 font-weight: normal;
@@ -237,7 +240,7 @@
             height: 304px;
             min-width: 236px;
             background-color: purple;
-            background-image: url(../images/tour-05.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour-05.jpg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -289,7 +292,7 @@
             width: 236px;
             background-color: purple;
             margin: 60px;
-            background-image: url(../images/tour-06.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour-06.jpg);
             justify-content: center;
             align-items: center;
             text-align: center;
@@ -345,12 +348,15 @@
         align-items: center;
         display: flex;
         margin: 0 auto;
+        //background-color: black;
+
+        
         .trip1{
             height: 304px;
             min-width: 236px;
             background-color: purple;
             margin: 60px;
-            background-image: url(../images/tour-07.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour-07.jpg);
             justify-content: center;
             align-items: center;
             text-align: center;
@@ -402,7 +408,7 @@
             height: 304px;
             min-width: 236px;
             background-color: purple;
-            background-image: url(../images/tour-08.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour-08.jpg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -454,7 +460,7 @@
             width: 236px;
             background-color: purple;
             margin: 60px;
-            background-image: url(../images/tour-09.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/tour-09.jpg);
             justify-content: center;
             align-items: center;
             text-align: center;
@@ -507,3 +513,214 @@
     }
 }
 
+@media all and (max-width: 850px){
+    .places {
+        padding-bottom: 3300px;
+        //height: 3000px;
+        justify-content: space-between;
+        //height: 5000px;
+        //background-color: black;
+        .r1{
+           flex-direction: column;
+           justify-content: space-between;
+            
+            .trip1{
+                height: 304px;
+                min-width: 236px;
+                h1{
+                    
+                }
+                h2{
+                    
+                }
+                
+                .learn{
+                   
+                    a{
+                       
+                    }
+                    p{
+
+                    }
+                }
+            }
+            .trip2{
+                height: 304px;
+                min-width: 236px;
+                h1{
+                  
+                }
+                h2{
+                    
+                }
+                
+                .learn{
+                   
+                    a{
+                        
+                    }
+                    p{
+                       
+                    }
+                }
+            }
+            .trip3{
+                height: 304px;
+                min-width: 236px;
+                h1{
+                   
+                }
+                h2{
+                   
+                }
+                
+                .learn{
+                   
+                    a{
+                        
+                    }
+                    
+                    p{
+                        
+                    }
+                }
+            }
+        
+        }
+        .r2{
+            flex-direction: column;
+            justify-content: space-between;
+            
+            .trip1{
+                height: 304px;
+                min-width: 236px;
+                
+                h1{
+                  
+                }
+                h2{
+                    
+                }
+                
+                .learn{
+              
+                    a{
+                        
+                    }
+                    p{
+                        
+                    }
+                }
+            }
+            .trip2{
+                height: 304px;
+            min-width: 236px;
+                h1{
+                  
+                }
+                h2{
+                    
+                }
+                
+                .learn{
+                   
+                    a{
+                       
+                    }
+                    p{
+                        
+                    }
+                }
+            }
+            .trip3{
+                height: 304px;
+            min-width: 236px;
+                h1{
+                    
+                }
+                h2{
+                    
+                }
+                
+                .learn{
+                    
+                    a{
+                        
+                    }
+                    
+                    p{
+                        
+                    }
+                }
+            }
+        
+        }
+        .r3{
+            flex-direction: column;
+            padding-top: 700px;
+            justify-content: space-between;
+            .trip1{
+                height: 304px;
+                min-width: 236px;
+                h1{
+                   
+                }
+                h2{
+                   
+                }
+                
+                .learn{
+                 
+                    a{
+                        
+                    }
+                    p{
+                       
+                    }
+                }
+            }
+            .trip2{
+                height: 304px;
+                min-width: 236px;
+                h1{
+              
+                }
+                h2{
+                   
+                }
+                
+                .learn{
+                    
+                    a{
+                       
+                    }
+                    p{
+                     
+                    }
+                }
+            }
+            .trip3{
+                height: 304px;
+                min-width: 236px;
+                h1{
+                   
+                }
+                h2{
+                   
+                }
+                
+                .learn{
+                    
+                    a{
+                       
+                    }
+                    
+                    p{
+                       
+                    }
+                }
+            }
+        
+        }
+    }
+}

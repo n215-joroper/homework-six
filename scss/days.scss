@@ -12,8 +12,6 @@
    
        
         .day1-header{
-            //background-color: pink;
-            
             
             h1{
                 font-size: 60px;
@@ -158,5 +156,95 @@
                 //font: bolder;
                 font-family: 'Gill Sans';
             }
+    }
+}
+
+@media all and (max-width: 980px){
+    .days{
+        margin-bottom: 50px;
+        .day1-holder{
+       
+       
+           
+            .day1-header{
+                
+                h1{
+                   
+                    
+                       
+                }
+                h1::after {
+               
+                     
+                   }
+                
+               
+            }
+            
+            .day1-text{
+                
+            }
+        }
+        .day2-holder{
+            
+            
+             .day2-header{
+                
+                 
+                 
+                 h1{
+                     
+                     
+                        
+                 }
+                 h1::after {
+                    
+                      
+                    }
+                 
+                
+             }
+             
+             .day2-text{
+               
+             }
+         }
+         .day3-holder{
+            
+            
+            
+             .day3-header{
+                 
+                 
+                 
+                 h1{
+                     
+                    
+                        
+                 }
+                 h1::after {
+                     
+                      
+                    }
+                 
+                
+             }
+             
+             .day3-text{
+                 
+             }
+         }
+        .book-now{
+         
+            
+            
+                a{
+                   
+                }
+                    
+                p{
+                   
+                }
+        }
     }
 }

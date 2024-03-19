@@ -15,16 +15,24 @@
         //background-color: pink;
         .client-header{
             //background-color: blueviolet;
-            max-width: 30%;
-            height: 60px;
-            font-size: 18px;
-            background: rgba(0,0,0,0);
-            border-bottom: 1px solid black;
             
             h1{
                 font-weight: normal;
-            font-family: 'Gill Sans';
+                font-family: 'Gill Sans';
+                position: relative;
+                font-size: 40px;
             }
+            h1::after {
+                display: block;
+                content: '';
+                 width: 255px;
+                 height: 2px;
+                 background: black;
+                 position: absolute;
+                 bottom: 0;
+                 left: 0;
+                 
+               }
         }
         .girl{
             margin-top: 37px;
@@ -99,22 +107,34 @@
     }
 }
 
-@media all and (max-width: 1008px){
+@media all and (max-width: 726px){
     .clients{
-        
-        
+        margin-top: 50px;
+        margin-bottom: 300px;
         
         .client-holder{
-           
+            
             .client-header{
-               
+                margin-top: 70px;
+                
             }
             .girl{
-               
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                display: block;
+                margin-bottom: 150px;
                 .girlImage{
+                    
                     
                 }
                 .girlText{
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-top: 20px;
                     
                     .girlName{
                         
@@ -125,13 +145,16 @@
                 }
             }
             .boy{
-                
-               
+                display: flex;
+                flex-direction: column-reverse; 
+                display: block; 
+                padding-top: 30px;
                 .boyImage{
+                    
                     
                 }
                 .boyText{
-                    
+                    margin-top: 20px;
                     .boyName{
                         
                         h4 {

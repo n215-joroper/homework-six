@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     //background-color: black;
+    
     nav{
         position: absolute;
         margin: 0 auto;
@@ -66,10 +67,37 @@
 
 
 @media all and (max-width: 850px){
-    .nav{
+    .nav-holder{
+       
         
-        .nav-holder{
-            visibility: none;
+        nav{
+          
+            flex-direction: column;
+            padding-bottom: 125px;
+                
+            span {
+               
+            }
+            .logo{
+                .logotravel{
+                  
+                    
+        
+                }
+            }
+                
+                div {
+                  
+                }
+            
+                a{
+                  
+                }
+            
         }
+        
+        
     }
+    
 }
+

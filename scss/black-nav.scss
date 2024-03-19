@@ -67,10 +67,39 @@ nav{
 }
 
 @media all and (max-width: 850px){
-    .nav{
+    nav{
         
-        .nav-holder{
-            visibility: none;
+        span{
+          
         }
+        
+        
+        
+        .black-nav-holder{
+            flex-direction: column;
+            padding-bottom: 125px;
+            .logo{
+                .logotravel{
+                    
+                    
+    
+                }
+            }
+                
+                div {
+                    
+                }
+            
+                a{
+                    
+                }
+            
+            
+        }
+    
+        
+        
+        
     }
+    
 }
